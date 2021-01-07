@@ -68,6 +68,7 @@ Button1:{
 })
 
 
+
 function Signup({ navigation }) {
   function pass(){
     console.log("signup email=",email);
@@ -75,7 +76,7 @@ function Signup({ navigation }) {
     .createUserWithEmailAndPassword(email, password)
     .then((ref) => {
       console.log(ref);
-      console.log('User account created & signed in!');
+      console.log('User account created & signed up!');
       navigation.navigate("Login");
     })
     .catch(error => {
